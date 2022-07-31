@@ -1,0 +1,163 @@
+
+   
+
+.Left {
+display: flex;
+align-items: center}
+.Middle {display: flex; flex: 1;margin-left: 70px;margin-right: 35px;max-width: 500px;align-items: center;}
+.Right {display: flex; width: 200px;
+    justify-content: space-around;
+    flex-shrink: 0;
+    position: relative;}
+
+.ham {
+    width: 25px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.you {
+    width: 90px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.search {
+    font-size: 15px;
+    height:36px;
+    flex: 1;
+    padding-left: 10px;
+    border-style:solid;  
+    border-color: rgb(189, 187, 187);
+    border-width: 1px;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 2px rgba(102, 63, 63, 0.05);
+    width: 0;
+
+}
+.search::placeholder {
+    font-size: 16px;
+}
+.search-icon,
+.voice-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.search-icon {
+    height: 40px;
+    width: 66px;
+    background-color: rgb(245, 241, 241);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(177, 174, 174);
+    margin-right: 10px;
+    margin-left: -1px;
+    position: relative
+}
+.search-icon:hover {
+    opacity: 0.80
+}
+.search-icon:active {
+    opacity: 0.7;
+}
+.search-icon .tooltip {
+    position:absolute;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: -45px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none
+}
+.search-icon:hover .tooltip{
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    opacity: 1;
+    transition: opacity 0.15s
+} 
+.search-image {
+    height: 25px   
+}
+.voice-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: rgb(245, 239, 239);
+    border: none;
+    position: relative
+}
+.voice-icon .tooltip1 {
+    position:absolute;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 6px;
+    padding-right: 6px;
+    white-space: nowrap;
+    font-size: 12px;
+    border-radius: 2px;
+    bottom: -45px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none
+}
+.voice-icon:hover .tooltip1 {
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    opacity: 1;
+    transition: opacity 0.15s
+}
+.voice-image {
+    height: 25px
+}
+.create {
+    width: 25px;
+}
+.create-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    position: relative;
+}
+
+.create-icon .tooltip2 {
+    font-family: roboto,arial;
+    position:absolute;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    border-radius: 2px;
+    bottom: -45px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none
+}
+.create-icon:hover .tooltip2 {
+    background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    opacity: 1;
+    transition: opacity 0.15s
+}
+.app {
+    width: 25px;
+}
+.noti {
+    width: 25px
+}
+.profile {
+    width: 35px;
+    border-radius: 20px;
+    margin-right: 10px
+}
+.profile:hover {
+    cursor: pointer
+}
